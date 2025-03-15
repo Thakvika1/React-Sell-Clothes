@@ -1,7 +1,11 @@
-
+import CardComponent from './components/CardComponent'
 
 function App() {
-  return <></>
+  return (
+    <>
+      <CardComponent />
+    </>
+  )
 }
 
 export default App
