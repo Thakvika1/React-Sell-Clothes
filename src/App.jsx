@@ -1,9 +1,9 @@
-import CardComponent from './components/CardComponent'
+import ProductCard from './components/ProductCard'
 
 function App() {
   return (
     <>
-      <CardComponent />
+      <ProductCard />
     </>
   )
 }
