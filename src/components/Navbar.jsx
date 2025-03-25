@@ -2,6 +2,7 @@ import SearchIcon from '../assets/icons/search-icon.svg'
 import HamburgerIcon from '../assets/icons/hamburger.svg'
 import '../styles/navbar.css'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   const [openHamburger, setOpenHamburger] = useState(false)
@@ -19,8 +20,8 @@ function Navbar() {
     <div className="header">
       <nav className="navbar">
         <ul className="nav">
-          {navLinks.map((link) => (
-            <a href="#">
+          {navLinks.map((link, index) => (
+            <a key={index} href="#">
               <li className="element">{link}</li>
             </a>
           ))}
@@ -35,8 +36,8 @@ function Navbar() {
 
         {openHamburger && (
           <ul className="nav-hamburger">
-            {navLinks.map((link) => (
-              <a href="#">
+            {navLinks.map((link, index) => (
+              <a key={index} href="#">
                 <li className="element">{link}</li>
               </a>
             ))}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.tapbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tapbar {
+    list-style: none;
+    width: 100%;
+    max-width: 1080px;
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    background-color: rgb(29, 29, 167);
+    box-shadow: 0px 4px 10px rgba(29, 29, 167, 0.5);
+}
+.tapbar-element {
+    font-size: 16px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border-radius: 24px;
+}
+.tapbar-element:hover {
+    background-color: white;
+    color: rgb(29, 29, 167);
+}
+.active {
+    background-color: white;
+    color: rgb(29, 29, 167);
+}
