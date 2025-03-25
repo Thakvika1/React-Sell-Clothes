@@ -41,8 +41,9 @@ body {
     text-align: center;
 }
 .element:hover {
-    background-color: lightblue;
-    color: black;
+    background-color: white;
+    color: rgb(29, 29, 167);
+
 }
 
 .hamburger {
