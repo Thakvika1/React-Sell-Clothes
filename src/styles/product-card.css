@@ -7,13 +7,13 @@ body {
   }
 .card {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     height: 100%;
-    max-height: 500px;
-    background-color: rgb(221, 221, 221);
+    max-height: 300px;
+    background-color: #EEEEEE;
     padding: 8px;
     border-radius: 12px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 8px #EEEEEE;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -26,15 +26,25 @@ body {
     border-radius: 8px;
 }
 
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .price {
+    font-size: 12px;
     font-weight: 400;
-    margin-top: 8px;
+    color: #222831;
 }
 .type {
-    font-weight: 700;
-    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    color: #222831;
 }
 .size {
-    font-weight: 400;
-    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    color: #222831;
 }
