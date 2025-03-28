@@ -1,15 +1,12 @@
-import Navbar from './components/Navbar'
-import Tapbar from './components/Tapbar'
-import ProductCard from './components/ProductCard'
-import Logo from './components/Logo'
+import { BrowserRouter } from 'react-router-dom'
+import HomepageRouter from './routes/HomepageRouter'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Logo />
-      <Tapbar />
-      <ProductCard />
+      <BrowserRouter>
+        <HomepageRouter />
+      </BrowserRouter>
     </>
   )
 }

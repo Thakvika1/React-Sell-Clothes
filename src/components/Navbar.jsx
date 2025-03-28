@@ -14,18 +14,23 @@ function Navbar() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const navLinks = ['Explore', 'Boy', 'Girl', 'Dress']
+  const navLinks = [
+    { text: 'Explore', tag: '/' },
+    { text: 'Boy', tag: '/Boy' },
+    { text: 'Girl', tag: '/Girl' },
+    { text: 'Dress', tag: '/Dress' },
+  ]
 
   return (
     <div className="header">
       <nav className="navbar">
-        <ul className="nav">
+        <div className="nav">
           {navLinks.map((link, index) => (
-            <a key={index} href="#">
-              <li className="element">{link}</li>
-            </a>
+            <Link key={index} to={link.tag} className="link">
+              {link.text}
+            </Link>
           ))}
-        </ul>
+        </div>
 
         <img
           onClick={() => setOpenHamburger(!openHamburger)}
@@ -35,13 +40,18 @@ function Navbar() {
         />
 
         {openHamburger && (
-          <ul className="nav-hamburger">
+          <div className="nav-hamburger">
             {navLinks.map((link, index) => (
-              <a key={index} href="#">
-                <li className="element">{link}</li>
-              </a>
+              <Link
+                onClick={() => setOpenHamburger(!openHamburger)}
+                to={link.tag}
+                className="link"
+                key={index}
+              >
+                {link.text}
+              </Link>
             ))}
-          </ul>
+          </div>
         )}
 
         <div className="search">

@@ -33,17 +33,17 @@ body {
     list-style: none;
 }
 
-.element {
+.link {
     font-size: 16px;
     font-weight: 500;
     color: white;
     padding: 18px;
     text-align: center;
+    text-decoration: none;
 }
-.element:hover {
+.link:hover {
     background-color: #EEEEEE;
     color: #222831;
-
 }
 
 .hamburger {
@@ -77,10 +77,6 @@ body {
     color: black;
 }
 
-a {
-    text-decoration: none;
-}
-
 @media (max-width: 600px) {
     .navbar {
         padding: 0px 24px;
@@ -96,8 +92,8 @@ a {
     .nav-hamburger {
         list-style: none;
         position: absolute;
-        background-color: #222831;
-        box-shadow: 0px 1px 6px #222831;
+        background-color: #393E46;
+        box-shadow: 0px 1px 6px #393E46;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -106,8 +102,5 @@ a {
         width: 100%;
         max-width: 100px;
         text-align: center;
-    }
-    .element {
-        padding: 18px 24px;
     }
 }
