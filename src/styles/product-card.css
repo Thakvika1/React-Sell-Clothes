@@ -7,9 +7,7 @@ body {
   }
 .card {
     width: 100%;
-    max-width: 150px;
-    height: 100%;
-    max-height: 300px;
+    max-width: 200px;
     background-color: #EEEEEE;
     padding: 8px;
     border-radius: 12px;
@@ -22,7 +20,7 @@ body {
 }
 .image {
     width: 100%;
-    height: 100%;
+    height: 250px;
     border-radius: 8px;
 }
 
@@ -47,4 +45,19 @@ body {
     font-weight: 500;
     margin-top: 4px;
     color: #222831;
+}
+
+.card-skeleton {
+    width: 100%;
+    max-width: 200px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+@media (max-width: 450px) {
+    .card {
+    max-width: 150px;
+    }
 }
