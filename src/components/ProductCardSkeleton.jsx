@@ -5,9 +5,9 @@ import '../styles/product-card.css'
 function ProductCardSkeleton() {
   return (
     <div className="card-skeleton">
-      <Skeleton height={250} width={200} />
-      <Skeleton width={100} style={{ marginTop: '10px' }} />
-      <Skeleton width={150} style={{ marginTop: '10px' }} />
+      <Skeleton className="image-skeleton" />
+      <Skeleton className="title-skeleton" />
+      <Skeleton className="text-skeleton" />
     </div>
   )
 }
