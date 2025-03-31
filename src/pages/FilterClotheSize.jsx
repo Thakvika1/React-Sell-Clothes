@@ -1,9 +1,7 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
 
-function FilterClotheSize({ selected, data }) {
-  let filteredData = []
-
+function FilterClotheSize({ selected, data, filteredData = [], type }) {
   if (selected === '0-12 months') {
     filteredData = data.filter(
       (listItem) =>
@@ -20,6 +18,8 @@ function FilterClotheSize({ selected, data }) {
         listItem.size === '1-2 years'
     )
   }
+
+  // const filterClothebyType = filteredData.filter((item) => item.type === type)
 
   return filteredData.map((item, index) => (
     <ProductCard
