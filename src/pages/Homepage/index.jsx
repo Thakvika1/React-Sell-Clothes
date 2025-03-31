@@ -3,7 +3,7 @@ import '../../styles/homepage.css'
 import { clothesData } from '../../data/clothesData'
 import { useState } from 'react'
 import Tapbar from '../../components/Tapbar'
-import FilterClotheSize from './FilterClotheSize'
+import FilterClotheSize from '../FilterClotheSize'
 import MapClotheData from './MapClotheData'
 
 function Homepage() {
