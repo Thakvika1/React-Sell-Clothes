@@ -1,7 +1,7 @@
 import '../styles/tapbar.css'
 import { useState } from 'react'
 
-function Tapbar() {
+function Tapbar({selected, handleClick}) {
   const tapbar = [
     '0-12 months',
     '1-2 years',
@@ -9,12 +9,12 @@ function Tapbar() {
     '4-5 years',
     '5 years+',
   ]
-  const [selected, setSelected] = useState(null)
+  // const [selected, setSelected] = useState(null)
 
-  const handleClick = (item) => {
-    setSelected(item)
-    console.log('Selected:', item)
-  }
+  // const handleClick = (item) => {
+  //   setSelected(item)
+  //   console.log('Selected:', item)
+  // }
 
   return (
     <div className="tapbar-container">
