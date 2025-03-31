@@ -19,17 +19,29 @@ function FilterClotheSize({ selected, data, filteredData = [], type }) {
     )
   }
 
-  // const filterClothebyType = filteredData.filter((item) => item.type === type)
+  const filterClothesData = filteredData.filter((item) => item.type === type)
 
-  return filteredData.map((item, index) => (
-    <ProductCard
-      key={index}
-      image={item.image}
-      type={item.type}
-      price={item.price}
-      size={item.size}
-    />
-  ))
+  const mapClothesData =
+    type === 'explore'
+      ? filteredData.map((item, index) => (
+          <ProductCard
+            key={index}
+            image={item.image}
+            type={item.type}
+            price={item.price}
+            size={item.size}
+          />
+        ))
+      : filterClothesData.map((item, index) => (
+          <ProductCard
+            key={index}
+            image={item.image}
+            type={item.type}
+            price={item.price}
+            size={item.size}
+          />
+        ))
+  return <>{mapClothesData}</>
 }
 
 export default FilterClotheSize

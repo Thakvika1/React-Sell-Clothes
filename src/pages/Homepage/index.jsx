@@ -21,7 +21,11 @@ function Homepage() {
       <div className="container">
         <div className="bodyContainer">
           {filterData ? (
-            <FilterClotheSize selected={selected} data={clothesData} />
+            <FilterClotheSize
+              selected={selected}
+              data={clothesData}
+              type={'explore'}
+            />
           ) : (
             <MapClotheData data={clothesData} />
           )}
