@@ -1,11 +1,10 @@
 import React from 'react'
-import '../styles/boypage.css'
-import ProductCard from '../components/ProductCard'
-import { clothesData } from '../data/clothesData'
+import ProductCard from '../../components/ProductCard'
+import { clothesData } from '../../data/clothesData'
 
-function Boypage() {
+function Dresspage() {
   // Filter data correctly
-  const filterClothesData = clothesData.filter((item) => item.type === 'Boy')
+  const filterClothesData = clothesData.filter((item) => item.type === 'Dress')
 
   // Render filtered data
   const renderClothesData = filterClothesData.map((item, index) => (
@@ -17,7 +16,6 @@ function Boypage() {
       size={item.size}
     />
   ))
-
   return (
     <div className="container">
       <div className="bodyContainer">{renderClothesData}</div>
@@ -25,4 +23,4 @@ function Boypage() {
   )
 }
 
-export default Boypage
+export default Dresspage

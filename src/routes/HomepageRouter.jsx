@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomepageLayout from '../Layouts/HomepageLayout'
-import Homepage from '../pages/homepage'
-import Boypage from '../pages/Boypage'
-import Girlpage from '../pages/Girlpage'
-import Dresspage from '../pages/Dresspage'
+import Homepage from '../pages/Homepage'
+import Boypage from '../pages/Boypage/Boypage'
+import Girlpage from '../pages/Girlpage/Girlpage'
+import Dresspage from '../pages/Dresspage/Dresspage'
 
 function HomepageRouter() {
   return (
