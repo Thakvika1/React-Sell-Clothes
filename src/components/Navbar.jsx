@@ -54,10 +54,9 @@ function Navbar() {
           </div>
         )}
 
-        <div className="search">
-          <img className="icon" src={SearchIcon} alt="search" />
-          <input className="input" type="search" placeholder="Search Clothes" />
-        </div>
+        <Link className="link" to={'/#'}>
+          Create Posts
+        </Link>
       </nav>
     </div>
   )

@@ -32,15 +32,17 @@ function FilterClotheSize({ selected, data, filteredData = [], type }) {
             size={item.size}
           />
         ))
-      : filterClothesData.map((item, index) => (
-          <ProductCard
-            key={index}
-            image={item.image}
-            type={item.type}
-            price={item.price}
-            size={item.size}
-          />
-        ))
+      : type === 'Boy' || type === 'Girl' || type === 'Dress'
+        ? filterClothesData.map((item, index) => (
+            <ProductCard
+              key={index}
+              image={item.image}
+              type={item.type}
+              price={item.price}
+              size={item.size}
+            />
+          ))
+        : null
   return <>{mapClothesData}</>
 }
 
