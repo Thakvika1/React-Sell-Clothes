@@ -1,48 +1,49 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
+import {
+  smallSize,
+  mediumSize,
+  bigSize,
+  biggerSize,
+  moreBiggerSize,
+} from '../data/clothesSize'
 
 function FilterClotheSize({ selected, data, filteredData = [], type }) {
   if (selected === '0-12 months') {
-    filteredData = data.filter(
-      (listItem) =>
-        listItem.size === '0-3 months' ||
-        listItem.size === '3-6 months' ||
-        listItem.size === '6-9 months' ||
-        listItem.size === '9-12 months'
-    )
+    filteredData = data.filter((listItem) => smallSize.includes(listItem.size))
   } else if (selected === '1-2 years') {
+    filteredData = data.filter((listItem) => mediumSize.includes(listItem.size))
+  } else if (selected === '2-4 years') {
+    filteredData = data.filter((listItem) => bigSize.includes(listItem.size))
+  } else if (selected === '4-5 years') {
     filteredData = data.filter(
-      (listItem) =>
-        listItem.size === '12-18 months' ||
-        listItem.size === '18-24 months' ||
-        listItem.size === '1-2 years'
+      (listItem) => listItem.size === biggerSize.includes(listItem.size)
+    )
+  } else if (selected === '5 years+') {
+    filteredData = data.filter((listItem) =>
+      moreBiggerSize.includes(listItem.size)
     )
   }
 
   const filterClothesData = filteredData.filter((item) => item.type === type)
 
-  const mapClothesData =
+  const typeFilter =
     type === 'explore'
-      ? filteredData.map((item, index) => (
-          <ProductCard
-            key={index}
-            image={item.image}
-            type={item.type}
-            price={item.price}
-            size={item.size}
-          />
-        ))
+      ? filteredData
       : type === 'Boy' || type === 'Girl' || type === 'Dress'
-        ? filterClothesData.map((item, index) => (
-            <ProductCard
-              key={index}
-              image={item.image}
-              type={item.type}
-              price={item.price}
-              size={item.size}
-            />
-          ))
+        ? filterClothesData
         : null
+
+  const mapClothesData = typeFilter.map((item, index) => (
+    <ProductCard
+      key={index}
+      image={item.image}
+      type={item.type}
+      price={item.price}
+      size={item.size}
+    />
+  ))
+
   return <>{mapClothesData}</>
 }
 
