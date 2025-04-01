@@ -1,4 +1,3 @@
-import SearchIcon from '../assets/icons/search-icon.svg'
 import HamburgerIcon from '../assets/icons/hamburger.svg'
 import '../styles/navbar.css'
 import { useState, useEffect } from 'react'

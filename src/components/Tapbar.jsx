@@ -9,12 +9,6 @@ function Tapbar({selected, handleClick}) {
     '4-5 years',
     '5 years+',
   ]
-  // const [selected, setSelected] = useState(null)
-
-  // const handleClick = (item) => {
-  //   setSelected(item)
-  //   console.log('Selected:', item)
-  // }
 
   return (
     <div className="tapbar-container">

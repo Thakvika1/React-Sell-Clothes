@@ -19,6 +19,20 @@ import Boy18 from '../assets/images/boy/boy18.jpg';
 import Boy19 from '../assets/images/boy/boy19.jpg';
 import Boy20 from '../assets/images/boy/boy20.jpg';
 import Boy21 from '../assets/images/boy/boy21.jpg';
+import Boy22 from '../assets/images/boy/boy22.jpg';
+import Boy23 from '../assets/images/boy/boy23.jpg';
+import Boy24 from '../assets/images/boy/boy24.jpg';
+import Boy25 from '../assets/images/boy/boy25.jpg';
+import Boy26 from '../assets/images/boy/boy26.jpg';
+import Boy27 from '../assets/images/boy/boy27.jpg';
+import Boy28 from '../assets/images/boy/boy28.jpg';
+import Boy29 from '../assets/images/boy/boy29.jpg';
+import Boy30 from '../assets/images/boy/boy30.jpg';
+import Boy31 from '../assets/images/boy/boy31.jpg';
+import Boy32 from '../assets/images/boy/boy32.jpg';
+
+
+
 import Girl1 from '../assets/images/girl/girl1.jpg';
 import Girl2 from '../assets/images/girl/girl2.jpg';
 import Girl3 from '../assets/images/girl/girl3.jpg';
@@ -45,6 +59,7 @@ import Girl20 from '../assets/images/girl/girl20.jpg';
 
 
 export const clothesData = [
+    // Infant Sizes
     { image: Boy1, type: 'Boy', price: '3.25', size: '0-3 months' },
     { image: Girl1, type: 'Girl', price: '3.25', size: '3-6 months' },
     { image: Boy2, type: 'Boy', price: '3.25', size: '6-9 months' },
@@ -76,6 +91,21 @@ export const clothesData = [
     { image: Boy15, type: 'Boy', price: '3.25', size: '12-18 months' },
     { image: Girl15, type: 'Girl', price: '3.25', size: '18-24 months' },
     { image: Girl16, type: 'Girl', price: '3.25', size: '0-3 months' },
+  
+    // Toddler & Kids Sizes
+    { image: Boy22, type: 'Boy', price: '3.25', size: '2-3 years' },
+    { image: Boy23, type: 'Boy', price: '3.25', size: '3-4 years' },
+    { image: Boy24, type: 'Boy', price: '3.25', size: '4-5 years' },
+    { image: Boy25, type: 'Boy', price: '3.25', size: '5 years' },
+    { image: Boy26, type: 'Boy', price: '3.25', size: '5-6 years' },
+    { image: Boy27, type: 'Boy', price: '3.25', size: '6-7 years' },
+    { image: Boy28, type: 'Boy', price: '3.25', size: '7 years' },
+    { image: Boy29, type: 'Boy', price: '3.25', size: '2-3 years' },
+    { image: Boy30, type: 'Boy', price: '3.25', size: '3-4 years' },
+    { image: Boy31, type: 'Boy', price: '3.25', size: '4-5 years' },
+    { image: Boy32, type: 'Boy', price: '3.25', size: '5 years' },
+  
+    // More Infant Sizes
     { image: Boy16, type: 'Boy', price: '3.25', size: '3-6 months' },
     { image: Girl17, type: 'Girl', price: '3.25', size: '6-9 months' },
     { image: Boy17, type: 'Boy', price: '3.25', size: '9-12 months' },
@@ -86,5 +116,6 @@ export const clothesData = [
     { image: Girl20, type: 'Girl', price: '3.25', size: '6-9 months' },
     { image: Boy20, type: 'Boy', price: '3.25', size: '9-12 months' },
     { image: Boy21, type: 'Boy', price: '3.25', size: '12-18 months' },
-];
+  ];
+  
 

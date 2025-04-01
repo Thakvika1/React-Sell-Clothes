@@ -16,9 +16,7 @@ function FilterClotheSize({ selected, data, filteredData = [], type }) {
   } else if (selected === '2-4 years') {
     filteredData = data.filter((listItem) => bigSize.includes(listItem.size))
   } else if (selected === '4-5 years') {
-    filteredData = data.filter(
-      (listItem) => listItem.size === biggerSize.includes(listItem.size)
-    )
+    filteredData = data.filter((listItem) => biggerSize.includes(listItem.size))
   } else if (selected === '5 years+') {
     filteredData = data.filter((listItem) =>
       moreBiggerSize.includes(listItem.size)
