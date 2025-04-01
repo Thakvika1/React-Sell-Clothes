@@ -16,9 +16,9 @@ function Navbar() {
 
   const navLinks = [
     { text: 'Explore', tag: '/' },
-    { text: 'Boy', tag: '/Boy' },
-    { text: 'Girl', tag: '/Girl' },
-    { text: 'Dress', tag: '/Dress' },
+    { text: 'Boy', tag: '/boy' },
+    { text: 'Girl', tag: '/girl' },
+    { text: 'Dress', tag: '/dress' },
   ]
 
   return (
@@ -54,7 +54,7 @@ function Navbar() {
           </div>
         )}
 
-        <Link className="link" to={'/#'}>
+        <Link className="link" to={'/createpost'}>
           Create Posts
         </Link>
       </nav>
