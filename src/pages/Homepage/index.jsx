@@ -1,10 +1,9 @@
 import React from 'react'
-import '../../styles/homepage.css'
 import { clothesData } from '../../data/clothesData'
 import { useState } from 'react'
 import Tapbar from '../../components/Tapbar'
 import FilterClotheSize from '../FilterClotheSize'
-import MapClotheData from './MapClotheData'
+import FilterClothesType from '../FilterClothesType'
 
 function Homepage() {
   const [selected, setSelected] = useState(null)
@@ -27,7 +26,7 @@ function Homepage() {
               type={'explore'}
             />
           ) : (
-            <MapClotheData data={clothesData} />
+            <FilterClothesType type={'explore'} data={clothesData} />
           )}
         </div>
       </div>

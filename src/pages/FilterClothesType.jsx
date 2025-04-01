@@ -5,8 +5,15 @@ function FilterClothesType({ type, data }) {
   // Filter data correctly
   const filterClothesData = data.filter((item) => item.type === type)
 
+  const typeFilter =
+    type === 'explore'
+      ? data
+      : type === 'Boy' || type === 'Girl' || type === 'Dress'
+        ? filterClothesData
+        : null
+
   // Render filtered data
-  const renderClothesData = filterClothesData.map((item, index) => (
+  const renderClothesData = typeFilter.map((item, index) => (
     <ProductCard
       key={index}
       image={item.image}
